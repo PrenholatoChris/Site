@@ -1,0 +1,24 @@
+.Home{
+  width: 100%;
+  background-color: #071e22;
+  background-image: url('../assets/Davi.png');
+
+  display: flex;
+  align-items: center;
+}
+
+.Home h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 10rem;
+  color: #bfb9b6;
+  position: absolute;
+  left: 5%;
+}
+
+.Home img{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}

@@ -1,0 +1,49 @@
+.ProjectComponent {
+    width: 640px;
+    height: 192px;
+    background-color: rgba(7, 30, 34,0.5);
+    margin: 3rem 0;
+}
+
+.ProjectComponent .project-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: rgba(7, 30, 34, 0.9) ;
+}
+.ProjectComponent .project-header h2{
+    width: 100%;
+    text-align: center;
+}
+
+.ProjectComponent .project-header  .project-header-buttons{
+    position: absolute;
+    top: calc(50%-10px);
+    right: 0;
+    margin-right: 12px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProjectComponent .project-header  .project-header-buttons span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.ProjectComponent .project-header  .project-header-buttons .red{
+    background-color: #ef534f;
+}
+.ProjectComponent .project-header  .project-header-buttons .yellow{
+    background-color: #F0B23D;
+}
+.ProjectComponent .project-header  .project-header-buttons .green{
+    background-color: #33BE47;
+}
+.ProjectComponent .project-content p {
+    margin: 8px;
+    font-size: larger;
+}
