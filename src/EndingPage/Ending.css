@@ -1,0 +1,5 @@
+.Ending {
+    background-color: var(--bg-color2);
+    background-image: url('../assets/EndingBG.png');
+    width: 100%;
+}

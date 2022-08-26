@@ -7,41 +7,52 @@ import { useEffect,useState} from 'react'
 
 function Projects() {
 
-  const [projects,setProjects] = useState([])
+  const [projects, setProjects] = useState([])
 
-  
-  useEffect( ()=>{
+  useEffect( () => {
+    var copy = []
     fetch("https://api.github.com/users/prenholatochris/repos")
     .then(response => response.json())
     .then((data) => { 
       data = Array.from(data)
-      data.forEach((project)=>{
-        if(project.description !== null){
-          if(project.description.includes("<PORFOLIO>")){
-            console.log(project)
-            console.log("achei")
+      data.forEach((githubProject) => {
+        if(githubProject.description !== null){
+          if(githubProject.description.includes("<PORTFOLIO>")){
+            if(!(projects.includes(githubProject))){
+              githubProject.description = githubProject.description.replace("<PORTFOLIO>","")
+              copy.push(githubProject)              
+            }
           }
         }
       })
+      return copy
     })
-      
+    .then((copy) => {
+      setProjects(copy)
+    })
+    
   },[])
 
   return (
-    <>
-      <div className="Projects bg-image">
-        <h1>My Projects</h1>
-        <div className='container'>
-          <ProjectComponent title='aadasdasds ' content="aloalo" link="teste"/>
-          <ProjectComponent title='aa' content="aloalo" link="teste"/>
-          <ProjectComponent title={projects} content="aloalo" link="teste"/>
-          <ProjectComponent title='aa' content="aloalo" link="teste"/>
-          <ProjectComponent title='aa' content="aloalo" link="teste"/>
-          <ProjectComponent title='aa' content="aloalo" link="teste"/>
-          
-        </div>
+    
+    <div className="Projects bg-image">
+      <h1>My Projects</h1>
+      <div className='container'>
+        {
+          projects.map((project) => {
+            
+            return (
+            <ProjectComponent 
+            key={project.id}
+            title={project.name} 
+            content={project.description} 
+            link={project.html_url}
+            /> )
+          })
+        }        
+        
       </div>
-    </>
+    </div>
   )
 }
 

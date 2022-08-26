@@ -4,7 +4,7 @@ import './ProjectComponent.css'
 
 function ProjectComponent(props){
     return(
-        <a href={props.link} className='ProjectComponent'>
+        <a target='_blank' href={props.link} className='ProjectComponent'>
           <div className="project-header">
             <h2>{props.title}</h2>
             <div className="project-header-buttons">

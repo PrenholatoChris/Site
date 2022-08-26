@@ -1,8 +1,10 @@
 .ProjectComponent {
-    width: 640px;
-    height: 192px;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 192px;
     background-color: rgba(7, 30, 34,0.5);
-    margin: 3rem 0;
+    margin: 16px 0;
 }
 
 .ProjectComponent .project-header{
@@ -43,7 +45,12 @@
 .ProjectComponent .project-header  .project-header-buttons .green{
     background-color: #33BE47;
 }
+
+.ProjectComponent a.project-content{
+    text-decoration: none;
+}
 .ProjectComponent .project-content p {
     margin: 8px;
+    text-decoration: none;
     font-size: larger;
 }
