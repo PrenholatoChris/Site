@@ -1,0 +1,5 @@
+.Contact {
+    background-color: var(--bg-color2);
+    background-image: url('../assets/ContactBG.png');
+    width: 100%;
+}

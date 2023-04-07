@@ -35,7 +35,7 @@ function Projects() {
 
   return (
     
-    <div className="Projects bg-image">
+    <div id='Projects' className="Projects bg-image">
       <h1>My Projects</h1>
       <div className='container'>
         {

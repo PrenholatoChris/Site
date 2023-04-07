@@ -2,16 +2,31 @@
 :root{
   --bg-color1: #071e22;
   --bg-color2: #28a49e;
+  --font-colorTitle: #bfb9b6;
+  --font-color1: #dadada;
+  --font-size-big: 5rem;
+  --font-size-title: 1.5rem;
+  --font-size-text: 20px;
+
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
   padding: 0;
 }
 
-h1,h2,h3,p,span {
+h1,h2,h3{
   font-family: 'Roboto', sans-serif;
-  color: #dadada;
+  color: var(--font-colorTitle);
+}
 
+p,span,li,ul,a {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color1);
+  text-decoration: none;
+  list-style: none;
 }
 
 .bg-image{

@@ -1,18 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Projects from './ProjectPage/Projects'
 import Home from './HomePage/Home'
+import Introduction from './IntroductionPage/Introduction'
 import About from './AboutPage/About'
+import Projects from './ProjectPage/Projects'
+import Contact from './ContactPage/Contact'
 import './index.css'
-import Ending from './EndingPage/Ending'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
     <>
     <Home />
+    <Introduction/>
     <About />
     <Projects />
-    <Ending />
+    <Contact />
     </>
   // </React.StrictMode>
 )

@@ -1,16 +1,29 @@
 import './About.css';
 
+import img1 from "../assets/6.png"
+import img2 from "../assets/7.png"
+import img3 from "../assets/8.png"
+
+import curriculo from "../assets/curriculo.pdf"
 function About() {
 
     return(
-        <div className="About">
-            <span >a</span>
-            <span >a</span>
-            <span ></span>
-            <span ></span>
-            <span >a</span>
-            <span ></span>
+        <div id='About' className="About">
+
+            <iframe src={curriculo} frameborder="0" width="100%" height="100%"></iframe>
+
+            <div className='bg-waves'>
+                {/* <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                <img src={img3} alt="" /> */}
+            </div>
+        
+        
+        
+        
         </div>
+
+
     )
     
 }

@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
 }
-
 .Home h1{
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -16,9 +15,48 @@
   left: 5%;
 }
 
-.Home img{
+/* .Home img{
   position: absolute;
   width: 100%;
   overflow: hidden;
   z-index: 0;
+} */
+
+.Home div.navigation{
+  position: absolute;
+  width: fit-content;
+  right: 5%;
+  font-size: 5rem;
+  border-left: #bfb9b6 solid;
+  padding-left: 10px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+.Home .navigation ul{
+  height: fit-content;
+  width: fit-content;
+
+}
+
+.Home .navigation ul li a{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+}
+.Home .navigation ul li a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #bfb9b6;
+  transform-origin: bottom right  ;
+  transition: transform 0.25s ease-out;
+}
+.Home .navigation ul li a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

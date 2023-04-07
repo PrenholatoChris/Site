@@ -3,3 +3,24 @@
     width: 100%;
     height: 1080px;
 }
+
+.About .bg-waves{
+    width: 100%;
+}
+
+.About .bg-waves img{
+    position: absolute;
+}
+
+.About .bg-waves img:nth-child(3){
+    margin-top: 300px;
+    z-index: 3;
+}
+
+.About .bg-waves img:nth-child(2){
+    z-index: 1;
+}
+
+.About .bg-waves img:nth-child(1){
+    z-index: 2;
+}
