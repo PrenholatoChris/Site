@@ -41,7 +41,11 @@ function Introduction() {
     else{
       index++
     }
+    let activeDot = document.getElementsByClassName("dot-on")[0]
+    activeDot.className = "dot"
 
+    let dot = document.getElementsByClassName("dot")[index]
+    dot.className = "dot-on"
 
     setMessage(messages[index]);
     // aux = index;
@@ -56,15 +60,19 @@ function Introduction() {
 
 
   return (
-    <div id='Introduction' className="Introduction bg-image">
-      <div>
-        <span onClick={shuffle}>{message}</span>
+    <div onClick={shuffle} id='Introduction' className="Introduction bg-image">
+      <div className='container'>
+        <div>
+          <span>{message}</span>
+        </div>
+
         <div className='box'>
-          <div className="dots"></div>
-          <div className="dots"></div>
-          <div className="dots"></div>
-          <div className="dots"></div>
-          <div className="dots"></div>
+          
+          <div className="dot dot-on"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
     </div>

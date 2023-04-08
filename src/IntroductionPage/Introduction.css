@@ -5,15 +5,16 @@
     height: 100vh;
     align-items: center;
 }
+.Introduction .container {
+    width: 75%;
+}
 
 .Introduction span{
     align-self: center;
     font-size: var(--font-size-big);
     text-align: center;
     display: block;
-    width: 80vw;
     
-
     animation-name: head;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -30,11 +31,18 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 10px;
+    gap: 12px;
 }
-.Introduction .dots{
+.Introduction .dot{
     width: 10px;
     height: 10px;
     border-radius: 100%;
     background-color: var(--font-color1);
+}
+
+.Introduction .dot-on{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--bg-color2);
 }
