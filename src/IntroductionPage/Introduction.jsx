@@ -35,7 +35,7 @@ function Introduction() {
     //   index = Math.floor(Math.random() * messages.length);
     // }
 
-    if(index >= messages.length){
+    if(index >= messages.length-1){
       index = 0
     }
     else{
@@ -57,7 +57,16 @@ function Introduction() {
 
   return (
     <div id='Introduction' className="Introduction bg-image">
-      <h1 onClick={shuffle}>{message}</h1>
+      <div>
+        <span onClick={shuffle}>{message}</span>
+        <div className='box'>
+          <div className="dots"></div>
+          <div className="dots"></div>
+          <div className="dots"></div>
+          <div className="dots"></div>
+          <div className="dots"></div>
+        </div>
+      </div>
     </div>
   )
 }
