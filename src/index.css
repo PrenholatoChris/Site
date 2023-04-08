@@ -2,7 +2,7 @@
 :root{
   --bg-color1: #071e22;
   --bg-color2: #28a49e;
-  --font-colorTitle: #bfb9b6;
+  --font-color-title: #ffffff;
   --font-color1: #dadada;
   --font-size-big: 4rem;
   --font-size-title: 1.5rem;
@@ -17,12 +17,12 @@ html {
   padding: 0;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
   font-family: 'Roboto', sans-serif;
-  color: var(--font-colorTitle);
+  color: var(--font-color-title);
 }
 
-p,span,li,ul,a {
+p,span,li,ul,a,strong {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color1);
   text-decoration: none;
