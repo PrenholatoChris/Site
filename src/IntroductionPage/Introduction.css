@@ -9,7 +9,10 @@
 .Introduction span{
     align-self: center;
     font-size: var(--font-size-big);
-    width: 80%;
+    text-align: center;
+    display: block;
+    width: 80vw;
+    
 
     animation-name: head;
     animation-duration: 5s;
