@@ -62,18 +62,19 @@ function Introduction() {
   return (
     <div onClick={shuffle} id='Introduction' className="Introduction bg-image">
       <div className='container'>
+      <div className='box'>    
+        <div className="dot dot-on"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+
         <div>
           <span>{message}</span>
         </div>
 
-        <div className='box'>
-          
-          <div className="dot dot-on"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
+        
       </div>
     </div>
   )

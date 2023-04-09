@@ -4,7 +4,7 @@ function Home() {
 
   return (
     <div id='Home' className="Home bg-image">
-      <h1 >STILL<br/>LEARNING</h1>
+      <h1>STILL<br/>LEARNING</h1>
 
       <div className='navigation'>
         <ul>

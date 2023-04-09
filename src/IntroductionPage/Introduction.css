@@ -2,11 +2,15 @@
     background-color: var(--bg-color1);
     display: flex;
     justify-content: center;
-    height: 100vh;
-    align-items: center;
+    height: 80vh;
 }
 .Introduction .container {
     width: 75%;
+    margin-top: 5rem;
+    /* height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
 .Introduction span{
@@ -30,7 +34,6 @@
 .Introduction .box{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     gap: 12px;
 }
 .Introduction .dot{

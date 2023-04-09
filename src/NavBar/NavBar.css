@@ -1,0 +1,18 @@
+.NavBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color1);
+    width: 100%;
+}
+
+.NavBar div{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.NavBar div ul{
+    display: flex;
+    gap: 20px
+}
