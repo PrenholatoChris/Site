@@ -1,6 +1,8 @@
 import './About.css';
 
-import img1 from "../assets/6.png"
+import imgGym from "../assets/dumbbell.svg"
+import imgController from "../assets/controller.svg"
+import imgAirplane from "../assets/airplane.svg"
 import myImg from "../assets/me.jpg"
 
 import curriculo from "../assets/curriculo.pdf"
@@ -10,14 +12,12 @@ function About() {
         <div id='About' className="About">
             <div className="container">
 
-                <h1>About Me</h1>
+                <h1>ABOUT ME</h1>
                 <div className='topo'>
                     <img src={myImg} alt="A photo of Christian Prenholato" />
                     <div>
                         <h2>Resume</h2>
-                        <p>Me chamo Christian, 21 anos, sou um tanto curioso no mundo da tecnologia. Atualmente estou graduando em Ciência da computação na 
-                            Universidade Federal do Espírito Santo (UFES), e no tempo livre estudo Desenvolvimento web. Me interesso bastante pela área da Segurança da 
-                            informação, principalmente em WebHacking.</p>
+                        <p>My name is Christian Prenholato, I'm a curious about technology. I am currently graduating in Computer Science at the Federal University of Espírito Santo (UFES), and in my spare time study Web Development. I am very interested in the area of Automation and Information Security, especially in WebHacking.</p>
                     </div>
                 </div>
                 <div className='baixo'>
@@ -38,15 +38,17 @@ function About() {
                     </div>
                     <div className="languages">
                         <h2>Languages</h2>
-                        <p>Portuguese</p>
-                        <strong>Fluent</strong>
-                        <p>English</p>
-                        <strong>Intermediate</strong>
+                        <h3>Portuguese</h3>
+                        <p>Fluent</p>
+                        <h3>English</h3>
+                        <p>Intermediate</p>
                     </div>
                     <div className="interests">
                         <h2>Interests</h2>
                         <ul>
-                            <li></li>
+                            <li><img src={imgGym} alt="" /></li>
+                            <li><img src={imgController} alt="" /></li>
+                            <li><img src={imgAirplane} alt="" /></li>
                         </ul>
                     </div>
                 </div>

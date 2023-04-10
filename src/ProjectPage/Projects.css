@@ -10,8 +10,10 @@
 
 .Projects h1{
     width: 100%;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
+    font-weight: 100;
+    
 }
 
 .Projects .container{

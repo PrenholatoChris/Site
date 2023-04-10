@@ -2,7 +2,7 @@
 :root{
   --bg-color1: #071e22;
   --bg-color2: #28a49e;
-  --font-color-title: #ffffff;
+  --font-color-title: #fff;
   --font-color1: #dadada;
   --font-size-big: 4rem;
   --font-size-title: 1.5rem;
@@ -20,6 +20,12 @@ html {
 h1,h2,h3,h4{
   font-family: 'Roboto', sans-serif;
   color: var(--font-color-title);
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
 }
 
 p,span,li,ul,a,strong {

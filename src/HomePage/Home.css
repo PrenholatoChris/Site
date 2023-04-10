@@ -24,7 +24,6 @@
 
 .Home div.navigation{
   position: absolute;
-  width: fit-content;
   right: 5%;
   font-size: 5rem;
   border-left: #bfb9b6 solid;
@@ -33,11 +32,7 @@
   display: flex;
   align-items: center;
 }
-.Home .navigation ul{
-  height: fit-content;
-  width: fit-content;
 
-}
 
 .Home .navigation ul li a{
   display: inline-block;

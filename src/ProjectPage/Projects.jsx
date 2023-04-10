@@ -36,7 +36,7 @@ function Projects() {
   return (
     
     <div id='Projects' className="Projects bg-image">
-      <h1>My Projects</h1>
+      <h1>PROJECTS</h1>
       <div className='container'>
         {
           projects.map((project) => {

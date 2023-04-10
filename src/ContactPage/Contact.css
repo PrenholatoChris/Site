@@ -3,3 +3,25 @@
     background-image: url('../assets/ContactBG.png');
     width: 100%;
 }
+
+.Contact h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.Contact .container{
+    margin-left: 5rem;
+}
+
+
+.Contact .container .icons img{
+    margin-right: 24px;
+    height: 80px;
+    object-fit: cover;
+}
+
+
+.Contact .container h2{
+    font-size: 3em;
+    margin-bottom: 5rem;
+}
