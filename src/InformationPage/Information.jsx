@@ -1,8 +1,8 @@
-import './Introduction.css'
+import './Information.css'
 import React from 'react';
 import { useState, useEffect, useCallback } from 'react';
 
-function Introduction() {
+function Information() {
 
   function calculateAge (birthDate, otherDate) {
     birthDate = new Date(birthDate);
@@ -60,7 +60,7 @@ function Introduction() {
 
 
   return (
-    <div onClick={shuffle} id='Introduction' className="Introduction">
+    <div onClick={shuffle} id='Information' className="Information">
       <div className='container'>
       
 
@@ -81,4 +81,4 @@ function Introduction() {
   )
 }
 
-export default Introduction
+export default Information

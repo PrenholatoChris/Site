@@ -1,5 +1,5 @@
 import './Home.css'
-import Introduction from '../IntroductionPage/Introduction'
+import Information from '../InformationPage/Information'
 
 function Home() {
 
@@ -9,7 +9,7 @@ function Home() {
 
         <div className='navigation'>
           <ul>
-            <li><a href='#Introduction'>Introduction</a></li>
+            <li><a href='#Home'>Home</a></li>
             <li><a href='#About'>About Me</a></li>
             <li><a href='#Projects'>Projects</a></li>
             {/* <li><a href='#Skills'>Skills</a></li> */}
@@ -18,7 +18,7 @@ function Home() {
         </div>
 
       <div className='intro'>
-        <Introduction/>
+        <Information/>
       </div>
     </div>
   )

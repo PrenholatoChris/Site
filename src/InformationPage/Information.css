@@ -1,14 +1,14 @@
-.Introduction{
+.Information{
     /* background-color: var(--bg-color1); */
     display: flex;
     justify-content: center;
 }
-.Introduction .container {
+.Information .container {
     width: 75%;
     margin-top: 2rem;
 }
 
-.Introduction span{
+.Information span{
     align-self: center;
     font-size: var(--font-size-big);
     text-align: center;
@@ -26,19 +26,19 @@
     100% {opacity:0;}
 }
 
-.Introduction .box{
+.Information .box{
     display: flex;
     justify-content: center;
     gap: 12px;
 }
-.Introduction .dot{
+.Information .dot{
     width: 10px;
     height: 10px;
     border-radius: 100%;
     background-color: var(--font-color1);
 }
 
-.Introduction .dot-on{
+.Information .dot-on{
     width: 10px;
     height: 10px;
     border-radius: 100%;
