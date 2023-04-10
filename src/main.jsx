@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <>
     <Home />
     <NavBar/>
-    <Introduction/>
+    {/* <Introduction/> */}
     <About />
     <Projects />
     <Contact />

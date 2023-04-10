@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--bg-color1);
   background-image: url('../assets/DaviBG.png');
+  margin-top: -3rem;
 
   display: flex;
   align-items: center;
@@ -26,11 +27,14 @@
   position: absolute;
   right: 5%;
   font-size: 5rem;
-  border-left: #bfb9b6 solid;
-  padding-left: 16px;
-  height: 60vh;
+  
   display: flex;
   align-items: center;
+}
+.Home .navigation ul{
+  border-left: #bfb9b6 solid;
+  padding-left: 16px;
+  height: 110%;
 }
 
 
@@ -54,4 +58,9 @@
 .Home .navigation ul li a:hover:after{
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.Home .intro{
+  width: 100%;
+  align-self: flex-end;
 }
