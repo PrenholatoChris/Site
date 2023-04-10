@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prenholatochris.github.io/prenholatochris.github.io",
+  "homepage": "https://prenholatochris.me/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
