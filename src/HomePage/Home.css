@@ -1,66 +1,34 @@
-.Home{
-  width: 100%;
-  background-color: var(--bg-color1);
-  background-image: url('../assets/DaviBG.png');
-  margin-top: -3rem;
-
+.home {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante que os elementos ocupem os extremos */
   align-items: center;
+  height: 100vh; /* Ocupa a tela inteira */
+  background: var(--bg-color1) url('../assets/DaviBG.png') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box; /* Garante que o padding seja incluído no cálculo de altura */
 }
-.Home h1{
+
+/* Título */
+.home h1 {
+  text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 10rem;
+  font-size: 8rem;
+  font-weight: 200;
   color: #bfb9b6;
-  position: absolute;
-  left: 5%;
+  margin-top: 5rem; 
 }
 
-/* .Home img{
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  z-index: 0;
-} */
-
-.Home div.navigation{
-  position: absolute;
-  right: 5%;
-  font-size: 5rem;
-  
-  display: flex;
-  align-items: center;
-}
-.Home .navigation ul{
-  border-left: #bfb9b6 solid;
-  padding-left: 16px;
-  height: 110%;
+/* Information */
+.home .Information{
+  margin-top: auto; /* Garante que o último elemento (Information) fique no final */
+  padding-bottom: 5rem;
 }
 
-
-.Home .navigation ul li a{
-  display: inline-block;
-  position: relative;
-  padding-bottom: 4px;
-}
-.Home .navigation ul li a:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #bfb9b6;
-  transform-origin: bottom right  ;
-  transition: transform 0.25s ease-out;
-}
-.Home .navigation ul li a:hover:after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.Home .intro{
-  width: 100%;
-  align-self: flex-end;
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 5rem;
+  }
 }

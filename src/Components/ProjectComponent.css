@@ -1,25 +1,29 @@
 .ProjectComponent {
     width: 100%;
-    height: 100%;
-    max-width: 640px;
-    max-height: 192px;
-    background-color: rgba(7, 30, 34,0.5);
+    max-width: 640px; /* Limita a largura */
+    height: auto; /* Deixa a altura adaptável */
+    background-color: rgba(7, 30, 34, 0.5);
     margin: 16px 0;
+    box-sizing: border-box; /* Para garantir que as dimensões considerem padding e bordas */
+    position: relative;
+    z-index: 1; /* Garante que o componente não sobreponha a NavBar */
 }
 
-.ProjectComponent .project-header{
-    position: relative;
+.ProjectComponent .project-header {
     display: flex;
     align-items: center;
     height: 56px;
-    background-color: rgba(7, 30, 34, 0.9) ;
-}
-.ProjectComponent .project-header h2{
-    width: 100%;
-    text-align: center;
+    background-color: rgba(7, 30, 34, 0.9);
+    position: relative;
 }
 
-.ProjectComponent .project-header  .project-header-buttons{
+.ProjectComponent .project-header h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0; /* Remove margens para evitar sobreposição */
+}
+
+.ProjectComponent .project-header .project-header-buttons {
     position: absolute;
     right: 0;
     margin-right: 12px;
@@ -28,28 +32,34 @@
     justify-content: space-between;
 }
 
-.ProjectComponent .project-header  .project-header-buttons span{
+.ProjectComponent .project-header .project-header-buttons span {
     display: block;
     width: 20px;
     height: 20px;
     border-radius: 100%;
 }
 
-.ProjectComponent .project-header  .project-header-buttons .red{
+.ProjectComponent .project-header .project-header-buttons .red {
     background-color: #ef534f;
 }
-.ProjectComponent .project-header  .project-header-buttons .yellow{
+
+.ProjectComponent .project-header .project-header-buttons .yellow {
     background-color: #F0B23D;
 }
-.ProjectComponent .project-header  .project-header-buttons .green{
+
+.ProjectComponent .project-header .project-header-buttons .green {
     background-color: #33BE47;
 }
 
-.ProjectComponent a.project-content{
+.ProjectComponent .project-content {
     text-decoration: none;
+    padding: 8px;
+    overflow: hidden; /* Evita transbordamento de conteúdo */
+    box-sizing: border-box;
 }
+
 .ProjectComponent .project-content p {
-    margin: 8px;
-    text-decoration: none;
+    margin: 0; /* Ajusta margens para evitar espaçamento extra */
     font-size: larger;
+    word-wrap: break-word; /* Quebra palavras longas */
 }

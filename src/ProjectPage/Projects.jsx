@@ -1,59 +1,49 @@
-import ImageBG from '../assets/ProjectsBG.png'
-import './Projects.css'
-
-import ProjectComponent from '../Components/ProjectComponent'
-import { useEffect,useState} from 'react'
-
+import './Projects.css';
+import ImageBG from '../assets/ProjectsBG.png';
+import ProjectComponent from '../Components/ProjectComponent';
+import { useEffect, useState } from 'react';
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
 
-  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const response = await fetch('https://api.github.com/users/prenholatochris/repos');
+        const data = await response.json();
+        const filteredProjects = data.filter(githubProject => 
+          githubProject.description && githubProject.description.includes('<PORTFOLIO>')
+        ).map(githubProject => ({
+          ...githubProject,
+          description: githubProject.description.replace('<PORTFOLIO>', '')
+        }));
+        
+        setProjects(filteredProjects);
+      } catch (error) {
+        console.error('Error fetching projects:', error);
+      }
+    }
 
-  useEffect( () => {
-    var copy = []
-    fetch("https://api.github.com/users/prenholatochris/repos")
-    .then(response => response.json())
-    .then((data) => { 
-      data = Array.from(data)
-      data.forEach((githubProject) => {
-        if(githubProject.description !== null){
-          if(githubProject.description.includes("<PORTFOLIO>")){
-            if(!(projects.includes(githubProject))){
-              githubProject.description = githubProject.description.replace("<PORTFOLIO>","")
-              copy.push(githubProject)              
-            }
-          }
-        }
-      })
-      return copy
-    })
-    .then((copy) => {
-      setProjects(copy)
-    })
-    
-  },[])
+    fetchProjects();
+  }, []);
 
   return (
-    
-    <div id='Projects' className="Projects bg-image">
-      <h1>PROJECTS</h1>
-      <div className='container'>
-        {
-          projects.map((project) => {
-            
-            return (
+    <div id="Projects" className="Projects bg-image">
+      <div className="container">
+        <h1>PROJECTS</h1>
+        <div className="container">
+          {projects.map(project => (
             <ProjectComponent 
-            key={project.id}
-            title={project.name} 
-            content={project.description} 
-            link={project.html_url}
-            /> )
-          })
-        }        
-        
+              key={project.id}
+              title={project.name} 
+              content={project.description} 
+              link={project.html_url}
+            />
+          ))}
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

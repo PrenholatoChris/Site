@@ -19,10 +19,10 @@ function Information() {
   const myAge = calculateAge(birthDate , todayDate)
  
   const messages =[`Hi I'm Christian Prenholato.`,
-    `I like to develop ideas that I find interesting`,
-    `I'm From Espirito Santo - Brazil`,
-    `Computer Science student at Federal University of Espirito Santo (UFES)`,
-    `I'm ${myAge}`
+    `I'm ${myAge}`,
+    `I like to develop ideas`,
+    `Graduating in Computer Science`,
+    `Student at Federal University of Espirito Santo`
   ]
   
   const [message,setMessage] = useState(`Hi I'm Christian Prenholato.`)

@@ -1,30 +1,31 @@
-.NavBar{
+.NavBar {
     position: fixed;
     top: 0;
     right: 0;
     background-color: var(--bg-color1);
     width: 100%;
+    z-index: 100;
 }
 
-.NavBar div{
+.NavBar div {
     display: flex;
     justify-content: end;
     margin-right: 5%;
 }
 
-.NavBar div ul{
+.NavBar div ul {
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 
-.NavBar div ul li a{
+.NavBar div ul li a {
     display: inline-block;
     position: relative;
     padding-bottom: 4px;
-    font-size: 24px;
+    font-size: 24px; /* Tamanho de fonte padrão */
 }
 
-.NavBar div ul li a:after{
+.NavBar div ul li a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -33,10 +34,24 @@
     bottom: 0;
     left: 0;
     background-color: #bfb9b6;
-    transform-origin: bottom center  ;
+    transform-origin: bottom center;
     transition: transform 0.25s ease-out;
 }
-.NavBar div ul li a:hover:after{
+
+.NavBar div ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom center;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .NavBar div ul li a {
+        font-size: 18px; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .NavBar div ul li a {
+        font-size: 16px; /* Reduz ainda mais em telas muito pequenas */
+    }
 }
